@@ -940,6 +940,7 @@ body.dark-theme {
   }
   .about__branch {
     bottom: 0;
+    left:2px;
   }
 
   .popular__container {
@@ -1213,7 +1214,7 @@ body.dark-theme {
 .carousel__container {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  
+  direction: ltr !important;
 }
 
 .carousel__img {
@@ -1231,6 +1232,7 @@ body.dark-theme {
   cursor: pointer;
   padding: 10px;
   z-index: 100;
+  direction: ltr!important;
 }
 
 .carousel__button__left {
