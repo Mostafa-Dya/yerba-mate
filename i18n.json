@@ -1,0 +1,42 @@
+{
+    "natural": {
+        "en": "Natural Ingredients",
+        "ar": "مكونات طبيعية",
+        "es": "Ingredientes naturales"
+    },
+    "home": {
+        "en": "Home",
+        "ar": "الرئيسية",
+        "es": "Hogar"
+    },
+    "about_us": {
+        "en": "About Us",
+        "ar": "من نحن",
+        "es": "Sobre nosotros"
+    },
+    "process": {
+        "en": "Process",
+        "ar": "العملية",
+        "es": "Proceso"
+    },
+    "blog": {
+        "en": "Blog",
+        "ar": "المدونة",
+        "es": "Blog"
+    },
+    "faq": {
+        "en": "FAQ",
+        "ar": "الاسئلة الشائعة",
+        "es": "FAQ"
+    },
+    "contact_us": {
+        "en": "Contact Us",
+        "ar": "تواصل معنا",
+        "es": "Contáctenos"
+    },
+    "language": {
+        "en": "Language",
+        "ar": "اللغة",
+        "es": "Idioma"
+    }
+}

@@ -122,6 +122,8 @@ document.addEventListener('DOMContentLoaded', function() {
   sr.reveal(`.about__data`, {origin: 'right'});
   sr.reveal(`.about__img`, {origin: 'left'});
 
+  sr.reveal(`#products_title`, {origin: 'bottom'});
+
   sr.reveal(`#benefits_title`, {origin: 'top'});
   sr.reveal(`#benefits_data`, {origin: 'bottom'});
 
