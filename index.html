@@ -37,16 +37,22 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link" data-key="home">Home</a>
+              <a href="#home" class="nav__link active-link" data-key="home"
+                >Home</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link" data-key="about_us">About Us</a>
+              <a href="#about" class="nav__link" data-key="about_us"
+                >About Us</a
+              >
             </li>
             <!-- <li class="nav__item">
               <a href="#popular" class="nav__link">Popular</a>
             </li> -->
             <li class="nav__item">
-              <a href="#process" class="nav__link" data-key="process">Process</a>
+              <a href="#process" class="nav__link" data-key="process"
+                >Process</a
+              >
             </li>
             <li class="nav__item">
               <a href="#blog" class="nav__link" data-key="blog">Blog</a>
@@ -56,7 +62,9 @@
             </li>
 
             <li class="nav__item">
-              <a href="#join" class="nav__link" data-key="contact_us">Contact Us</a>
+              <a href="#join" class="nav__link" data-key="contact_us"
+                >Contact Us</a
+              >
             </li>
             <li class="nav__item">
               <div class="nav__item dropdown">
@@ -69,7 +77,6 @@
               </div>
             </li>
           </ul>
-          
 
           <!-- Close button -->
           <div class="nav__close" id="nav-close">
@@ -96,15 +103,12 @@
           <div class="nav__toggle" id="nav-toggle">
             <i class="ri-apps-2-line"></i>
           </div>
-
-          
         </div>
       </nav>
     </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
-
       <!--==================== HOME ====================-->
       <section class="home section" id="home">
         <div class="home__container container grid">
@@ -148,14 +152,16 @@
               src="assets/img/mate-images/mate-carton-blue.png"
               alt="image enjoy"
               class="enjoy__img"
+              id="main-image-1"
             />
-            
+
             <img
               src="assets/img/mate-images/mate-carton-blue-side.png"
               alt="image enjoy"
-              class="enjoy__img side-image-1"
+              class="enjoy__img side-image"
+              id="side-image-1"
             />
-            
+
             <h2 class="enjoy__title">Healthy</h2>
             <span class="enjoy__subtitle">High coarse mixture</span>
           </article>
@@ -167,13 +173,15 @@
               src="assets/img/mate-images/mate-blue.png"
               alt="image enjoy"
               class="enjoy__img"
+              id="main-image-2"
             />
 
             <img
-            src="assets/img/mate-images/mate-blue-side.png"
-            alt="image enjoy"
-            class="enjoy__img side-image-2"
-          />
+              src="assets/img/mate-images/mate-blue-side.png"
+              alt="image enjoy"
+              class="enjoy__img side-image"
+              id="side-image-2"
+            />
             <h2 class="enjoy__title">Delicious</h2>
             <span class="enjoy__subtitle">High coarse mixture</span>
           </article>
@@ -185,13 +193,15 @@
               src="assets/img/mate-images/mate-red-white.png"
               alt="image enjoy"
               class="enjoy__img"
+              id="main-image-3"
             />
 
             <img
-            src="assets/img/mate-images/mate-red-white-side.png"
-            alt="image enjoy"
-            class="enjoy__img side-image-3"
-          />
+              src="assets/img/mate-images/mate-red-white-side.png"
+              alt="image enjoy"
+              class="enjoy__img side-image"
+              id="side-image-3"
+            />
             <h2 class="enjoy__title">Organic</h2>
             <span class="enjoy__subtitle">A coarse, low-powder mixture</span>
           </article>
@@ -208,7 +218,6 @@
               We are committed to bringing you the highest quality Yerba Mate,
               produced sustainably with respect for tradition and environment.
             </p>
-
           </div>
 
           <img
@@ -239,7 +248,9 @@
           <div class="benefits__content grid" id="benefits_data">
             <article class="benefits__card">
               <i class="ri-leaf-line benefits__icon"></i>
-              <h3 class="benefits__title" data-key="natural">Natural Ingredients</h3>
+              <h3 class="benefits__title" data-key="natural">
+                Natural Ingredients
+              </h3>
               <p class="benefits__description">
                 Sourced from the best natural estates, ensuring pure, non-GMO
                 ingredients.
@@ -326,23 +337,48 @@
             />
           </div>
 
+          <!-- Image Viewer Modal -->
+
+
           <!-- Step 4: Packaging -->
-          <div class="process__step grid">
-            <div class="carousel" id="img_process_4">
-              <div class="carousel__container">
-                <img src="assets/img/mate-images/mate-carton-blue.png" alt="Packaging Yerba Mate" class="carousel__img" />
-                <img src="assets/img/mate-images/mate-blue.png" alt="Packaging Yerba Mate" class="carousel__img" />
-                <img src="assets/img/mate-images/mate-red-white.png" alt="Packaging Yerba Mate" class="carousel__img" />
-              </div>
-              <button class="carousel__button carousel__button__left">&#10094;</button>
-              <button class="carousel__button carousel__button__right">&#10095;</button>
+          <div class="process__step grid packaging_view">
+            <div id="image-viewer">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="full-image" />
             </div>
-        
+            <div class="carousel" id="img_process_4">
+              <div class="carousel__container images">
+  
+                <img
+                  src="assets/img/mate-images/mate-carton-blue.png"
+                  alt="Packaging Yerba Mate"
+                  class="carousel__img"
+                />
+                <img
+                  src="assets/img/mate-images/mate-blue.png"
+                  alt="Packaging Yerba Mate"
+                  class="carousel__img"
+                />
+                <img
+                  src="assets/img/mate-images/mate-red-white.png"
+                  alt="Packaging Yerba Mate"
+                  class="carousel__img"
+                />
+              </div>
+              <button class="carousel__button carousel__button__left">
+                &#10094;
+              </button>
+              <button class="carousel__button carousel__button__right">
+                &#10095;
+              </button>
+            </div>
+
             <div class="process__info" id="process_4">
               <i class="ri-edit-box-line process__icon"></i>
               <h3 class="process__title">Packaging</h3>
               <p class="process__description">
-                Packaged with care to ensure that every sip is as fresh as the forests it comes from.
+                Packaged with care to ensure that every sip is as fresh as the
+                forests it comes from.
               </p>
             </div>
           </div>
@@ -364,31 +400,39 @@
               Discover the rich history and cultural significance of Yerba Mate
               in South America.
             </p>
-            <a href="http://www.yerbamateblog.com/about/" class="button">Read More</a>
+            <a href="http://www.yerbamateblog.com/about/" class="button"
+              >Read More</a
+            >
           </article>
           <article class="blog__card" id="blog_card_2">
             <img
-            src="assets/img/mate-images/health-benefits.png"
-            alt="Blog Image"
+              src="assets/img/mate-images/health-benefits.png"
+              alt="Blog Image"
               class="blog__img"
             />
             <h3 class="blog__title">Health Benefits of Yerba Mate</h3>
             <p class="blog__description">
               Learn about the various health benefits that Yerba Mate offers.
             </p>
-            <a href="https://yerbacrew.com/blogs/guides/the-health-benefits-of-yerba-mate" class="button">Read More</a>
+            <a
+              href="https://yerbacrew.com/blogs/guides/the-health-benefits-of-yerba-mate"
+              class="button"
+              >Read More</a
+            >
           </article>
           <article class="blog__card" id="blog_card_3">
             <img
-            src="assets/img/mate-images/mate-recipes.jpg"
-            alt="Blog Image"
+              src="assets/img/mate-images/mate-recipes.jpg"
+              alt="Blog Image"
               class="blog__img"
             />
             <h3 class="blog__title">Yerba Mate Recipes</h3>
             <p class="blog__description">
               Try these delicious Yerba Mate recipes to make at home.
             </p>
-            <a href="https://yerbacrew.com/blogs/food-recipes" class="button">Read More</a>
+            <a href="https://yerbacrew.com/blogs/food-recipes" class="button"
+              >Read More</a
+            >
           </article>
         </div>
       </section>
@@ -396,7 +440,9 @@
       <!--==================== FAQ ====================-->
       <section class="faq section" id="faq">
         <div class="faq__container container">
-          <h2 class="section__title" id="faq_title">Frequently Asked Questions</h2>
+          <h2 class="section__title" id="faq_title">
+            Frequently Asked Questions
+          </h2>
           <div class="faq__accordion">
             <div class="faq__item">
               <button class="faq__question">What is Yerba Mate?</button>
@@ -500,7 +546,6 @@
               <li><a href="#about" class="footer__link">About Us</a></li>
               <li><a href="#join" class="footer__link">Contact Us</a></li>
             </ul>
-
           </div>
           <div>
             <h3 class="footer__title">News</h3>
@@ -577,6 +622,5 @@
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/lang.js"></script>
-
   </body>
 </html>

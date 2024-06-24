@@ -195,7 +195,47 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  
+  const cards = document.querySelectorAll('.enjoy__card');
 
+  cards.forEach(card => {
+    const mainImage = card.querySelector('.enjoy__img:not(.side-image)');
+    const sideImage = card.querySelector('.side-image');
+
+    function toggleImages() {
+      if (mainImage.style.opacity === '0') {
+        mainImage.style.opacity = '1';
+        sideImage.style.opacity = '0';
+      } else {
+        mainImage.style.opacity = '0';
+        sideImage.style.opacity = '1';
+      }
+    }
+
+    mainImage.addEventListener('click', toggleImages);
+    sideImage.addEventListener('click', toggleImages);
+  });
+  document.querySelectorAll('.images img').forEach(function (img) {
+    img.addEventListener('click', function () {
+      document.getElementById('full-image').src = this.src;
+      document.getElementById('image-viewer').style.display = 'block';
+    });
+  });
+
+ // Close modal on close button click
+ document.querySelector('#image-viewer .close').addEventListener('click', function () {
+    document.getElementById('image-viewer').style.display = 'none';
+  });
+
+  // Close modal when clicking outside the image
+//   document.querySelector('#image-viewer').addEventListener('click', function (event) {
+//     if (event.target === document.getElementById('image-viewer')) {
+//       document.getElementById('image-viewer').style.display = 'none';
+//     }
+//   });
+
+  // Close modal on scroll
+  window.addEventListener('scroll', function () {
+    document.getElementById('image-viewer').style.display = 'none';
+  });
 });
 
