@@ -387,6 +387,22 @@ body.dark-theme {
   margin: 0 auto 0.75rem;
   filter: var(--shadow-img);
   transition: transform 0.4s;
+  transform: scale(1.5); /* Increase image size by 30% */
+  margin-bottom: 2rem;
+}
+
+.side-image-1,
+.side-image-2,
+.side-image-3{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+  transform: scale(1.5); /* Increase side image size by 30% */
 }
 
 .enjoy__bg {
@@ -424,6 +440,23 @@ body.dark-theme {
 }
 .enjoy__card:hover .side-image-3 {
   opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .enjoy__container {
+    grid-template-columns: 200px; /* Adjust container size for mobile */
+  }
+
+  .enjoy__img {
+    transform: scale(1.5); /* Slightly reduce image size for mobile */
+  }
+
+  .side-image-1,
+  .side-image-2,
+  .side-image-3 {
+    transform: scale(1.5); /* Slightly reduce side image size for mobile */
+  }
 }
 
 

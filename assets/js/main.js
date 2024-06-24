@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const sr = ScrollReveal({
       origin: 'top',
       distance: '60px',
-      duration: 2500,
+      duration: 1900,
       delay: 400,
       // reset: true, // Uncomment to allow animation repeat
   });
